@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "allowed_example" {
   ami           = "ami-0c3fd0f5d33134a76" # Amazon Linux 2 (東京リージョン)
-  instance_type = "t3.large"
+  instance_type = "t3.small"
   tags = {
     Name = "allowed-instance-2-hands-on"
   }
